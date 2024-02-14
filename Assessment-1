@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<title>ICTWEB452</title>
+</html>
+<style>
+h2 {
+    font-size:50px;
+}
+p {
+    font-size:30px
+}
+nav {
+  display: block;
+}
+.topnav a {
+    font-size: 25px;
+    color: black;
+}
+.topnav a:hover {
+    color:purple;
+}
+
+/* Flex containers */
+      .flex-container{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: black;
+    }
+    .flex-container > div {
+        background-color: whitesmoke;
+        margin: 10px;
+        width: 500px;
+        height: 800px;
+        text-align: top;
+        line-height: 250px;
+        font-size: 50px;
+    }
+    .flex-item-left {
+        padding: 10px;
+        flex: 50%;
+    }
+    .flex-item-right{
+        flex:50%;
+    }
+
+    @media (max-width:625px){
+        .flex-container {
+            flex-direction: column;
+        }
+    }
+    @media (max-width:625px){
+        .top.nav{
+            position:fixed;
+            bottom:0;
+            width:100%;
+        }
+        
+    }
+</style>
+<section>
+    <nav class="topnav" class="container">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+    </nav>
+</section>
+
+<div class="flex-container">
+    <div>
+        <h2>Lorem Ipsum</h2>
+        <p>jhgjgj</p>
+    </div>
+
+    <div>Lorem Ipsum</div>
+</div>
+
+
+</body>
+</html>
