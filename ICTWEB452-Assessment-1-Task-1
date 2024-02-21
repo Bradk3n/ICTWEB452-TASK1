@@ -19,6 +19,8 @@ nav {
     font-size: 25px;
     color: black;
 }
+
+/*Will make the links turn people when mouse hovers over it */
 .topnav a:hover {
     color:purple;
 }
@@ -30,6 +32,7 @@ nav {
         justify-content: center;
         background-color: black;
     }
+/* The colour inside the sections */    
     .flex-container > div {
         background-color: whitesmoke;
         margin: 10px;
@@ -38,9 +41,9 @@ nav {
         text-align: top;
         line-height: 250px;
         font-size: 50px;
+        border: solid;
     }
     .flex-item-left {
-        padding: 10px;
         flex: 50%;
     }
     .flex-item-right{
@@ -54,12 +57,13 @@ nav {
         }
         
     }
-/*Changes flex-box directions when changing screen size */
+/*Changes flex-box direction to column when changing screen size */
     @media (max-width:625px){
         .flex-container {
             flex-direction: column;
         }
     }
+/*Moves the nav tab to the bottom*/    
     @media screen and (max-width:625px){
         nav{
             position:fixed;
@@ -69,8 +73,7 @@ nav {
 
         }
     }
-
-        
+       
 </style>
 
 <!--Navigation tab-->
@@ -87,10 +90,15 @@ nav {
         <header>
         <h2>Lorem Ipsum</h2>
         </header>
-        <p>Lorem Ipsum Stuff</p>
+        <p>Lorem Ipsum</p>
     </div>
 
-    <div>Lorem Ipsum</div>
+    <div>
+        <header>
+        <h2>Lorem Ipsum</h2>
+        </header>
+        <p>Lorem Ipsum</p>
+    </div>
 </div>
 
 </body>
