@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8">    
 <title>ICTWEB452</title>
 </html>
 <style>
-h2 {
-    font-size:50px;
+
+h2{
+    font-size:30px;
 }
-p {
-    font-size:30px
+p{
+    font-size:14px;
 }
+/* Website's navigation tab*/
 nav {
   display: block;
 }
@@ -20,7 +23,7 @@ nav {
     color:purple;
 }
 
-/* Flex containers */
+/* Flex containers (Design of the containers)*/
       .flex-container{
         display:flex;
         flex-direction: row;
@@ -44,36 +47,51 @@ nav {
         flex:50%;
     }
 
+    /* Stops the visibility of the menu when the page is printed */
+    @media print{
+        nav{
+            display:none;
+        }
+        
+    }
+/*Changes flex-box directions when changing screen size */
     @media (max-width:625px){
         .flex-container {
             flex-direction: column;
         }
     }
-    @media (max-width:625px){
-        .top.nav{
+    @media screen and (max-width:625px){
+        nav{
             position:fixed;
-            bottom:0;
-            width:100%;
+            bottom: 0;
+            width: 100%;
+            text-align:left;
+
         }
-        
     }
+
+        
 </style>
+
+<!--Navigation tab-->
 <section>
-    <nav class="topnav" class="container">
+    <nav class="topnav" class="flex-container">
         <a href="#home">Home</a>
         <a href="#news">News</a>
     </nav>
 </section>
 
+<!--Sections-->
 <div class="flex-container">
     <div>
+        <header>
         <h2>Lorem Ipsum</h2>
-        <p>jhgjgj</p>
+        </header>
+        <p>Lorem Ipsum Stuff</p>
     </div>
 
     <div>Lorem Ipsum</div>
 </div>
-
 
 </body>
 </html>
